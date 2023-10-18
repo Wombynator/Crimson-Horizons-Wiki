@@ -53,6 +53,58 @@ p {
     height: auto;
 }
 
+.accordion-container {
+    background-color: #f0f0f0;
+    padding: 20px;
+    margin: 20px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+}
+
+.accordion {
+    background-color: #f1f1f1;
+    font-size: medium;
+    cursor: pointer;
+    padding: 10px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    text-align: left;
+    outline: none;
+}
+
+.accordion-panel {
+    display: none;
+    padding: 10px;
+}
+
+.small-list-item {
+    display: flex; /* Set the list item to display as flex */
+    align-items: center; /* Vertically center the flex items */
+    padding: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+}
+
+.small-list-block-title {
+    width: 15%;
+}
+
+.small-list-block-image {
+    filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.4));
+    image-rendering: pixelated;
+    transition: transform 0.3s;
+}
+
+.small-list-block-image:hover {
+    transform: scale(1.2);
+}
+
+.small-list-block-image img {
+    max-width: 100%;
+    height: auto;
+}
+
 ul {
     list-style: none;
     padding: 0;

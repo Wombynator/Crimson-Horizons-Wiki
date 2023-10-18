@@ -10,40 +10,42 @@
 </head>
 
 <body class="body">
-    <h1>Crimson Horizons Wiki</h1>
+    <h1>Welcome to the Crimson Horizons Wiki</h1>
 
-    <div class="container">
-        <div class="block-name">
-            <h2>Block Name</h2>
-            <p>Description of the game block goes here. You can provide information about its appearance, function, and
-                usage in the game.</p>
-        </div>
-        <div class="block-description">
-            <h2>Block Image</h2>
-            <img class="block-image" src="images/regolith_big.gif" alt="Game Block">
-              
+    <div class="accordion-container">
+        <button class="accordion"><strong>Items</strong></button>
+        <div class="accordion-panel">
             <ul>
-                <li><strong>Type:</strong> Type of the block (e.g., wood, stone, ore).</li>
-                <li><strong>Color:</strong> Color of the block if applicable.</li>
-                <li><strong>Obtaining:</strong> How to obtain the block in the game.</li>
-                <li><strong>Usage:</strong> How the block can be used in crafting, building, or other game mechanics.
+                <li class="small-list-item">
+                    <strong class="small-list-block-title">Drill</strong>
+                    <img class="small-list-block-image" src="images/drill.png" alt="Drill Image...">
+                </li>                
+                <li class="small-list-item">
+                    <strong class="small-list-block-title">Shovel</strong>
+                    <img class="small-list-block-image" src="images/shovel.png" alt="Shovel Image...">
                 </li>
-                <li><strong>Special Properties:</strong> Any unique characteristics or properties of the block.</li>
+                
             </ul>
         </div>
     </div>
 
-    <h2>Crafting Recipes</h2>
-    <p>If the block can be used in crafting, provide crafting recipes here.</p>
+    <script>
+        // JavaScript to handle accordion behavior
+        const accordions = document.querySelectorAll('.accordion');
 
-    <h2>Trivia</h2>
-    <p>Fun facts or interesting information about the game block.</p>
+        accordions.forEach(accordion => {
+            accordion.addEventListener('click', function() {
+                this.classList.toggle('accordion-active');
+                const panel = this.nextElementSibling;
+                if (panel.style.display === 'block') {
+                    panel.style.display = 'none';
+                } else {
+                    panel.style.display = 'block';
+                }
+            });
+        });
+    </script>
 
-    <h2>References</h2>
-    <p>Cite any sources or references used for the information on this page.</p>
-
-    <p><em>For more information about other in-game elements, visit the <a href="blocks/regolith">Game Wiki
-                homepage</a>.</em></p>
 </body>
 
 </html>

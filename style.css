@@ -34,6 +34,7 @@ p {
     max-width: 25%;
 	padding: 20px;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
 }
 
 .block-image {
@@ -41,6 +42,11 @@ p {
     margin: 20px auto;
 	filter: drop-shadow(0 0 10px rgba(0,0,0,0.4));
 	image-rendering: pixelated;
+    transition: transform 0.3s; /* Add a smooth transition effect */
+}
+
+.block-image:hover {
+    transform: scale(1.2); /* Increase the size on hover */
 }
 
 .block-image img {
@@ -79,5 +85,6 @@ a:hover {
         margin: 20px auto;
         padding: 20px;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        border-radius: 5px;
     }
 }

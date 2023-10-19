@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -19,12 +20,12 @@
                 <li class="small-list-item">
                     <strong class="small-list-block-title">Drill</strong>
                     <img class="small-list-block-image" src="images/drill.png" alt="Drill Image...">
-                </li>
+                </li>                
                 <li class="small-list-item">
                     <strong class="small-list-block-title">Shovel</strong>
                     <img class="small-list-block-image" src="images/shovel.png" alt="Shovel Image...">
                 </li>
-
+                
             </ul>
         </div>
     </div>
@@ -54,7 +55,7 @@
         const accordions = document.querySelectorAll('.accordion');
 
         accordions.forEach(accordion => {
-            accordion.addEventListener('click', function () {
+            accordion.addEventListener('click', function() {
                 this.classList.toggle('accordion-active');
                 const panel = this.nextElementSibling;
                 if (panel.style.display === 'block') {

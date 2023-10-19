@@ -80,9 +80,9 @@ p {
 
 .small-list {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* You can adjust the number of columns as needed */
-    gap: 10px; /* Adjust the gap between items */
-    list-style: none; /* Remove the default list style */
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    list-style: none;
     padding: 0;
 }
 

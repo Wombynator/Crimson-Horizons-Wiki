@@ -3,11 +3,15 @@ const imagePreviewContainer = document.getElementById('image-preview-container')
 const imagePreview = document.getElementById('image-preview');
 
 imageToPreview.addEventListener('click', function () {
-    const imageURL = this.src;
-    imagePreview.src = imageURL;
-    imagePreviewContainer.style.display = 'flex';
+    imagePreviewContainer.classList.add("active");
+    imagePreview.classList.toggle("active");
 });
 
 imagePreviewContainer.addEventListener('click', function () {
-    imagePreviewContainer.style.display = 'none';
+    imagePreviewContainer.classList.add("deactivating");
+    imagePreviewContainer.classList.remove("active");
+    imagePreview.classList.toggle("active");
+    setTimeout(() => {
+        imagePreviewContainer.classList.remove("deactivating");
+    }, 300);
 });

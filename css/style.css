@@ -78,25 +78,39 @@ p {
     padding: 10px;
 }
 
+.small-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* You can adjust the number of columns as needed */
+    gap: 10px; /* Adjust the gap between items */
+    list-style: none; /* Remove the default list style */
+    padding: 0;
+}
+
+
 .small-list-item {
-    display: flex; /* Set the list item to display as flex */
-    align-items: center; /* Vertically center the flex items */
     padding: 10px;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
     border-radius: 5px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.small-list-item:hover {
+    text-decoration: none;
 }
 
 .small-list-block-title {
-    width: 15%;
+    width: 100%;
 }
 
 .small-list-block-image {
     filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.4));
-    image-rendering: pixelated;
     transition: transform 0.3s;
+    padding: 0 5px;
 }
 
-.small-list-block-image:hover {
+.small-list-item:hover .small-list-block-image {
     transform: scale(1.2);
 }
 
@@ -109,10 +123,6 @@ ul {
     list-style: none;
     padding: 0;
     margin: 0;
-}
-
-ul li {
-    margin-bottom: 10px;
 }
 
 strong {

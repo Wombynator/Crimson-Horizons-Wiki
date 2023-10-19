@@ -138,6 +138,7 @@ a:hover {
     text-decoration: underline;
 }
 
+
 @media (min-width: 768px) {
     body {
         max-width: 1024px;

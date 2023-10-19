@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CH Wiki</title>
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
     <link rel="icon" type="image/png" href="images/Crimson_Horizons.png">
 </head>
 
@@ -19,12 +20,12 @@
                 <li class="small-list-item">
                     <strong class="small-list-block-title">Drill</strong>
                     <img class="small-list-block-image" src="images/drill.png" alt="Drill Image...">
-                </li>                
+                </li>
                 <li class="small-list-item">
                     <strong class="small-list-block-title">Shovel</strong>
                     <img class="small-list-block-image" src="images/shovel.png" alt="Shovel Image...">
                 </li>
-                
+
             </ul>
         </div>
     </div>
@@ -49,23 +50,7 @@
         </div>
     </div>
 
-    <script>
-        // JavaScript to handle accordion behavior
-        const accordions = document.querySelectorAll('.accordion');
-
-        accordions.forEach(accordion => {
-            accordion.addEventListener('click', function() {
-                this.classList.toggle('accordion-active');
-                const panel = this.nextElementSibling;
-                if (panel.style.display === 'block') {
-                    panel.style.display = 'none';
-                } else {
-                    panel.style.display = 'block';
-                }
-            });
-        });
-    </script>
-
+    <script src="js/index.js"></script>
 </body>
 
 </html>

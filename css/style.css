@@ -11,7 +11,9 @@ h1 {
 h2 {
     font-family: 'Linux Libertine','Georgia','Times',serif;
     margin-top: 20px;
+    padding-bottom: 5px;
     color: #444;
+    border-bottom: 1px solid #a2a9b1;
 }
 
 p {

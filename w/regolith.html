@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Regolith Wiki</title>
     <link rel="stylesheet" type="text/css" href="../css/style.css">
-    <link rel="stylesheet" type="text/css" href="../css/blocks.css">
+    <link rel="stylesheet" type="text/css" href="../css/wiki.css">
     <link rel="icon" type="image/png" href="../images/regolith.gif">
 </head>
 
@@ -15,7 +15,6 @@
     <div class="container">
         <div class="block-name">
             <h2>Regolith</h2>
-            <hr class="custom-hr">
             <p>Regolith, an abundant geological material constituting around 40% of the in-game terrain, is a
                 fundamental resource encompassing rocks, dust, and sand. This versatile substance serves as the
                 cornerstone for constructing in-game buildings, roads, and pathways, essential for the development and
@@ -34,140 +33,146 @@
     </div>
 
     <h2>Obtaining</h2>
-    <hr class="custom-hr">
-    <p><strong>Natural generation:</strong> Regolith naturally generates across the game world, covering an extensive
+    <h3>Natural generation</h3>
+    <p>Regolith naturally generates across the game world, covering an extensive
         40% of the terrain. This means that players can typically find it by exploring the environment without the need
         for extensive mining or excavation.</p>
-    <p><strong>Breaking:</strong> Another efficient method of collecting Regolith is by employing specialized <a
-            href="drill">drills</a> or
-        <a href="excavation_tool">excavation tool</a>. These powerful machines can make short work of
+    <h3>Breaking</h3>
+    <p>Another efficient method of collecting Regolith is by employing specialized <a href="drill">drills</a>
+        or <a href="excavation_tool">excavation tool</a>. These powerful machines can make short work of
         extracting Regolith from the ground, significantly
         speeding up the resource collection process. Whether you're setting up a mining operation or constructing
         large-scale infrastructure projects, using drills and excavators is the go-to choice for players looking to
         gather Regolith swiftly and effectively.
     </p>
-    <p><strong>Crafting:</strong> While Regolith itself cannot be crafted, it serves as a crucial ingredient in various
+    <h3>Crafting</h3>
+    <p>While Regolith itself cannot be crafted, it serves as a crucial ingredient in various
         crafting recipes. Players can combine Regolith with other materials to create an array of structures and items.
     </p>
 
     <h2>Usage</h2>
-    <hr class="custom-hr">
-    <p><strong>Crafting ingredient:</strong> As a versatile resource, Regolith has a diverse range of applications in
-        the game:</p>
-    <p>Crafting Ingredient: Regolith serves as a fundamental ingredient in many crafting recipes. Players can use it in
+
+    <h3>Crafting ingredient</h3>
+    <p>Regolith serves as a fundamental ingredient in many crafting recipes. Players can use it in
         conjunction with other materials to create buildings, roads, and pathways, enhancing their in-game environment
         and infrastructure.</p>
 
     <h2>Data values</h2>
-    <hr class="custom-hr">
-    <p><strong>ID:</strong> <code class="data-value">ch:regolith</code></p>
+    <h3>ID</h3>
+    <table class="data-table">
+        <tr>
+            <th class="data-table-header">Name</th>
+            <th class="data-table-header">Identifier</th>
+        </tr>
+        <tr>
+            <td class="data-table-default">
+                <p><img class="data-table-image" src="../images/regolith.gif" alt="Regolith Image...">Regolith</p>
+            </td>
+            <td class="data-table-default"><code>regolith</code></td>
+        </tr>
+    </table>
 
-    <p><strong>States:</strong></p>
+    <h3>States</h3>
 
-    <body>
-        <table class="block-states-table">
-            <tr>
-                <th class="block-states-table-header">Name</th>
-                <th class="block-states-table-header">Default value</th>
-                <th class="block-states-table-header">Allowed values</th>
-                <th class="block-states-table-header">Description</th>
-            </tr>
-            <tr>
-                <td class="block-states-table-name" rowspan="10">rock_amount</td>
-                <td class="block-states-table-default" rowspan="10"><code class="data-value">0</code></td>
-                <td class="block-states-table-values"><code class="data-value">0</code></td>
-                <td class="block-states-table-description">
-                    <p><img class="image-to-preview image-description-preview" src="../images/regolith_0.png"
-                            alt="Regolith Image..."> No Rocks or Dust</p>
-                </td>
-            </tr>
-            <tr>
-                <td class="block-states-table-values"><code class="data-value">1</code></td>
-                <td class="block-states-table-description">
-                    <p><img class="image-to-preview image-description-preview" src="../images/regolith_1.png"
-                            alt="Regolith Image..."> No Rocks or Dust</p>
-                </td>
-            </tr>
-            <tr>
-                <td class="block-states-table-values"><code class="data-value">2</code></td>
-                <td class="block-states-table-description">
-                    <p><img class="image-to-preview image-description-preview" src="../images/regolith_2.png"
-                            alt="Regolith Image..."> No Rocks or Dust</p>
-                </td>
-            </tr>
-            <tr>
-                <td class="block-states-table-values"><code class="data-value">3</code></td>
-                <td class="block-states-table-description">
-                    <p><img class="image-to-preview image-description-preview" src="../images/regolith_3.png"
-                            alt="Regolith Image..."> No Rocks or Dust</p>
-                </td>
-            </tr>
-            <tr>
-                <td class="block-states-table-values"><code class="data-value">4</code></td>
-                <td class="block-states-table-description">
-                    <p><img class="image-to-preview image-description-preview" src="../images/regolith_4.png"
-                            alt="Regolith Image..."> No Rocks or Dust</p>
-                </td>
-            </tr>
-            <tr>
-                <td class="block-states-table-values"><code class="data-value">5</code></td>
-                <td class="block-states-table-description">
-                    <p><img class="image-to-preview image-description-preview" src="../images/regolith_5.png"
-                            alt="Regolith Image..."> No Rocks or Dust</p>
-                </td>
-            </tr>
-            <tr>
-                <td class="block-states-table-values"><code class="data-value">6</code></td>
-                <td class="block-states-table-description">
-                    <p><img class="image-to-preview image-description-preview" src="../images/regolith_6.png"
-                            alt="Regolith Image..."> No Rocks or Dust</p>
-                </td>
-            </tr>
-            <tr>
-                <td class="block-states-table-values"><code class="data-value">7</code></td>
-                <td class="block-states-table-description">
-                    <p><img class="image-to-preview image-description-preview" src="../images/regolith_7.png"
-                            alt="Regolith Image..."> No Rocks or Dust</p>
-                </td>
-            </tr>
-            <tr>
-                <td class="block-states-table-values"><code class="data-value">8</code></td>
-                <td class="block-states-table-description">
-                    <p><img class="image-to-preview image-description-preview" src="../images/regolith_8.png"
-                            alt="Regolith Image..."> No Rocks or Dust</p>
-                </td>
-            </tr>
-            <tr>
-                <td class="block-states-table-values"><code class="data-value">9</code></td>
-                <td class="block-states-table-description">
-                    <p><img class="image-to-preview image-description-preview" src="../images/regolith_9.png"
-                            alt="Regolith Image..."> No Rocks or Dust</p>
-                </td>
-            </tr>
-        </table>
+    <table class="data-table">
+        <tr>
+            <th class="data-table-header">Name</th>
+            <th class="data-table-header">Default value</th>
+            <th class="data-table-header">Allowed values</th>
+            <th class="data-table-header">Description</th>
+        </tr>
+        <tr>
+            <td class="data-table-name" rowspan="10">rock_amount</td>
+            <td class="data-table-default" rowspan="10"><code>0</code></td>
+            <td class="data-table-default"><code>0</code></td>
+            <td class="data-table-default">
+                <p><img class="image-to-preview data-table-image" src="../images/regolith_0.png"
+                        alt="Regolith Image...">No Rocks or Dust</p>
+            </td>
+        </tr>
+        <tr>
+            <td class="data-table-default"><code>1</code></td>
+            <td class="data-table-default">
+                <p><img class="image-to-preview data-table-image" src="../images/regolith_1.png"
+                        alt="Regolith Image...">No Rocks or Dust</p>
+            </td>
+        </tr>
+        <tr>
+            <td class="data-table-default"><code>2</code></td>
+            <td class="data-table-default">
+                <p><img class="image-to-preview data-table-image" src="../images/regolith_2.png"
+                        alt="Regolith Image...">No Rocks or Dust</p>
+            </td>
+        </tr>
+        <tr>
+            <td class="data-table-default"><code>3</code></td>
+            <td class="data-table-default">
+                <p><img class="image-to-preview data-table-image" src="../images/regolith_3.png"
+                        alt="Regolith Image...">No Rocks or Dust</p>
+            </td>
+        </tr>
+        <tr>
+            <td class="data-table-default"><code>4</code></td>
+            <td class="data-table-default">
+                <p><img class="image-to-preview data-table-image" src="../images/regolith_4.png"
+                        alt="Regolith Image...">No Rocks or Dust</p>
+            </td>
+        </tr>
+        <tr>
+            <td class="data-table-default"><code>5</code></td>
+            <td class="data-table-default">
+                <p><img class="image-to-preview data-table-image" src="../images/regolith_5.png"
+                        alt="Regolith Image...">No Rocks or Dust</p>
+            </td>
+        </tr>
+        <tr>
+            <td class="data-table-default"><code>6</code></td>
+            <td class="data-table-default">
+                <p><img class="image-to-preview data-table-image" src="../images/regolith_6.png"
+                        alt="Regolith Image...">No Rocks or Dust</p>
+            </td>
+        </tr>
+        <tr>
+            <td class="data-table-default"><code>7</code></td>
+            <td class="data-table-default">
+                <p><img class="image-to-preview data-table-image" src="../images/regolith_7.png"
+                        alt="Regolith Image...">No Rocks or Dust</p>
+            </td>
+        </tr>
+        <tr>
+            <td class="data-table-default"><code>8</code></td>
+            <td class="data-table-default">
+                <p><img class="image-to-preview data-table-image" src="../images/regolith_8.png"
+                        alt="Regolith Image...">No Rocks or Dust</p>
+            </td>
+        </tr>
+        <tr>
+            <td class="data-table-default"><code>9</code></td>
+            <td class="data-table-default">
+                <p><img class="image-to-preview data-table-image" src="../images/regolith_9.png"
+                        alt="Regolith Image...">No Rocks or Dust</p>
+            </td>
+        </tr>
+    </table>
 
-        <h2>Trivia</h2>
-        <hr class="custom-hr">
-        <p>Regolith's porous quality ensures efficient drainage when used in construction, which can help mitigate
-            flooding
-            issues in the game. This material is often found in abundance near water bodies, as it tends to accumulate
-            in
-            areas with sediment deposits.</p>
+    <h2>Trivia</h2>
+    <p>Regolith's porous quality ensures efficient drainage when used in construction, which can help mitigate
+        flooding issues in the game. This material is often found in abundance near water bodies, as it tends to
+        accumulate in areas with sediment deposits.</p>
 
-        <h2>References</h2>
-        <hr class="custom-hr">
-        <p>To optimize the use of Regolith in the game, players are encouraged to explore in-game tutorials and guides.
-            Additionally, the official game manual and community forums can provide valuable insights into the diverse
-            applications and benefits of Regolith as a construction and crafting resource.</p>
+    <h2>References</h2>
+    <p>To optimize the use of Regolith in the game, players are encouraged to explore in-game tutorials and guides.
+        Additionally, the official game manual and community forums can provide valuable insights into the diverse
+        applications and benefits of Regolith as a construction and crafting resource.</p>
 
-        <p><em>For more information about other in-game elements, visit the <a href="/Crimson-Horizons-Wiki/">Game Wiki
-                    homepage</a>.</em></p>
+    <p><em>For more information about other in-game elements, visit the <a href="/Crimson-Horizons-Wiki/">Game Wiki
+                homepage</a>.</em></p>
 
-        <div id="image-preview-container">
-            <img id="image-preview" src="" alt="Preview Image">
-        </div>
+    <div id="image-preview-container">
+        <img id="image-preview" src="" alt="Preview Image">
+    </div>
 
-        <script src="../js/blocks.js"></script>
-    </body>
+    <script src="../js/wiki.js"></script>
+</body>
 
 </html>

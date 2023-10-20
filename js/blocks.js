@@ -1,17 +1,18 @@
-const imageToPreview = document.getElementById('image-to-preview');
+const imagesToPreview = document.querySelectorAll('.image-to-preview');
 const imagePreviewContainer = document.getElementById('image-preview-container');
 const imagePreview = document.getElementById('image-preview');
 
-imageToPreview.addEventListener('click', function () {
-    imagePreviewContainer.classList.add("active");
-    imagePreview.classList.toggle("active");
-});
+imagesToPreview.forEach(imageToPreview => {
+
+    imageToPreview.addEventListener('click', function () {
+        imagePreviewContainer.classList.toggle("active");
+        const imageURL = this.src;
+        imagePreview.src = imageURL;
+        imagePreview.classList.toggle("active");
+    });
+})
 
 imagePreviewContainer.addEventListener('click', function () {
-    imagePreviewContainer.classList.add("deactivating");
-    imagePreviewContainer.classList.remove("active");
+    imagePreviewContainer.classList.toggle("active");
     imagePreview.classList.toggle("active");
-    setTimeout(() => {
-        imagePreviewContainer.classList.remove("deactivating");
-    }, 300);
 });

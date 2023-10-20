@@ -19,14 +19,9 @@
 .block-image {
     display: block;
     margin: 20px auto;
-    filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.4));
+    width: 6em;
     image-rendering: pixelated;
-    transition: transform 0.3s;
-    cursor: pointer;
-}
-
-.block-image:hover {
-    transform: scale(1.2);
+    filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.4));
 }
 
 .block-image img {
@@ -41,48 +36,92 @@
     border-radius: 3px;
 }
 
+.image-to-preview {
+    transition: transform 0.3s;
+    cursor: pointer;
+}
+
+.image-to-preview:hover {
+    transform: scale(1.2);
+}
+
 #image-preview-container {
     display: flex;
     position: fixed;
     top: 0;
     left: 0;
-    width: 0%;
-    height: 0%;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
     background: rgba(0, 0, 0, 0);
     justify-content: center;
     align-items: center;
     backdrop-filter: blur(0px);
-    transition: background 0.3s, backdrop-filter 0.3s;
+    transition: background 0.5s cubic-bezier(.75, 0, .25, 1), backdrop-filter 0.5s cubic-bezier(.75, 0, .25, 1);
 }
 
 #image-preview-container.active {
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.8);
+    pointer-events: auto;
+    background: rgba(0, 0, 0, 0.6);
     backdrop-filter: blur(5px);
-    transition: background 0.3s, backdrop-filter 0.3s;
-}
-
-#image-preview-container.deactivating {
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0);
-    backdrop-filter: blur(0px);
-    transition: background 0.3s, backdrop-filter 0.3s;
+    transition: background 0.5s cubic-bezier(.75, 0, .25, 1), backdrop-filter 0.5s cubic-bezier(.75, 0, .25, 1);
 }
 
 #image-preview {
-    image-rendering: pixelated;
+    opacity: 0;
+    image-rendering: optimizeSpeed;
+    display: inline-block;
     filter: drop-shadow(0 0 0px rgba(0, 0, 0, 0));
     height: 0%;
     width: auto;
-    transition: height 0.2s, filter 0.3s ease;
+    transition: opacity 0.3s cubic-bezier(.75, -0.3, 1, 0), height 0.3s cubic-bezier(.75, -0.3, 1, 0), filter 0.3s cubic-bezier(.75, -0.3, 1, 0);
 }
 
 #image-preview.active {
-    image-rendering: pixelated;
+    opacity: 1;
     filter: drop-shadow(0 0 25px rgba(0, 0, 0, 0.6));
-    height: 50%;
+    height: 20em;
+    transition: opacity 0.3s cubic-bezier(0, 1, 0, 1.3), height 0.3s cubic-bezier(0, 1, 0, 1.3), filter 0.3s cubic-bezier(0, 1, 0, 1.3);
+}
+
+.block-states-table {
+    margin: 1em 0;
+    border: 1px solid #a2a9b1;
+    border-collapse: collapse;
     width: auto;
-    transition: height 0.2s, filter 0.3s ease;
+    text-align: left;
+}
+
+.block-states-table-header {
+    background-color: #ececec;
+    border: 1px solid #a2a9b1;
+    text-align: center;
+    padding: 8px;
+}
+
+.block-states-table-name {
+    background-color: #ececec;
+    border: 1px solid #a2a9b1;
+    font-weight: bold;
+    padding: 8px;
+}
+
+.block-states-table-default {
+    border: 1px solid #a2a9b1;
+    padding: 8px;
+}
+
+.block-states-table-values {
+    border: 1px solid #a2a9b1;
+    padding: 8px;
+}
+
+.block-states-table-description {
+    border: 1px solid #a2a9b1;
+    padding: 0px 8px 0px 8px;
+}
+
+.image-description-preview {
+    vertical-align: middle;
+    padding-right: 5px;
 }

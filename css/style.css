@@ -3,6 +3,15 @@ body {
     color: #3a3a3a;
 }
 
+.body-container {
+    width: calc(100% - 512px);
+    background-color: #FFF2EB;
+    margin: 20px auto;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+}
+
 h1 {
     font-size: 36px;
     font-weight: 300;
@@ -49,14 +58,4 @@ a {
 
 a:hover {
     text-decoration: underline;
-}
-
-@media (min-width: 768px) {
-    body {
-        max-width: 1024px;
-        margin: 20px auto;
-        padding: 20px;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-        border-radius: 5px;
-    }
 }

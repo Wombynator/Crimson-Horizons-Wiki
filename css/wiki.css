@@ -2,21 +2,21 @@
     display: flex;
 }
 
-.block-name {
+.wiki-name {
     flex: 1;
     padding: 0 20px 0 0;
 }
 
-.block-info {
+.wiki-info {
     flex: 2;
-    background-color: #f0f0f0;
+    background-color: #FFE4D6;
     max-width: 25%;
     padding: 0 20px 20px 20px;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
     border-radius: 5px;
 }
 
-.block-image {
+.wiki-image {
     display: block;
     margin: 20px auto;
     width: 6em;
@@ -24,7 +24,7 @@
     filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.4));
 }
 
-.block-image img {
+.wiki-image img {
     max-width: 100%;
     height: auto;
 }
@@ -79,6 +79,7 @@
 
 .data-table {
     margin: 1em 0;
+    background-color: #f8f9fa;
     border: 1px solid #a2a9b1;
     border-collapse: collapse;
     width: auto;

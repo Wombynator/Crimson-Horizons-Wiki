@@ -110,7 +110,7 @@
 }
 
 .data-table-default code {
-    font-family: monospace,monospace;
+    font-family: Consolas, Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif;
     font-size: inherit;
     padding: 2px 5px;
     border: 1px solid #BBC2C6;

@@ -1,11 +1,13 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+
 body {
     font-family: "Liberation Sans", Arial, Helvetica, sans-serif;
     color: #3a3a3a;
 }
 
 .body-container {
-    width: calc(100% - 512px);
-    background-color: #FFF2EB;
+    width: clamp(1024px, calc(100% - 512px), 100%);
+    background-color: rgba(255, 242, 235, 0.8);
     margin: 20px auto;
     padding: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);

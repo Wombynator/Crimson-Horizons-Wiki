@@ -62,7 +62,7 @@
 
 #image-preview {
     opacity: 0;
-    image-rendering: optimizeSpeed;
+    image-rendering: pixelated;
     display: inline-block;
     filter: drop-shadow(0 0 0px rgba(0, 0, 0, 0));
     height: 0%;

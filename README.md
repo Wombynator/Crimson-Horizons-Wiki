@@ -1,1 +1,1 @@
-View it (here)[https://github.com/wombynator/crimson-horizons]
+View it [here](https://github.com/wombynator/crimson-horizons)

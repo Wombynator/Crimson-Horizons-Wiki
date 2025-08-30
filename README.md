@@ -1,0 +1,1 @@
+View it [here](https://wombynator.github.io/Crimson-Horizons-Wiki/)
